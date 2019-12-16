@@ -78,7 +78,7 @@ Nice snippet of code to create a table with all file anmes in a folder
       _nam=filename('fid',"&dir");                                                                                            
       _opn=dopen('fid');                                                                                                      
       do _n_=1 to dnum(_opn);                                                                                                 
-         filename="&dir."!!dread(_opn,_n_);                                                                                   
+         filename="&dir./"!!dread(_opn,_n_);                                                                                   
          output;                                                                                                              
          drop _:;                                                                                                             
       end;                                                                                                                    
