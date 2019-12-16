@@ -76,7 +76,7 @@ data directory;
   _nam=filename('fid',"&dir");                                                                                               
   _opn=dopen('fid');                                                                                                         
   do _n_=1 to dnum(_opn);                                                                                                    
-     filename="&dir."!!dread(_opn,_n_);                                                                                      
+     filename="&dir./"!!dread(_opn,_n_);                                                                                      
      output;                                                                                                                 
      drop _:;                                                                                                                
   end;                                                                                                                       
